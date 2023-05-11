@@ -8,9 +8,9 @@ window.addEventListener("scroll", function(){
 
 let menu = document.querySelector("#menu-icon");
 
-let navMenu = document.querySelector("#nav-menu");
+let navMenu = document.querySelector(".navmenu");
 
 menu.onclick = () =>{
     menu.classList.toggle("bx-x");
-    navMenu.classList.toggle(open);
+    navMenu.classList.toggle("open");
 }
