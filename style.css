@@ -163,6 +163,20 @@ header{
     .row img:hover{
         transform: scale(0.9);
     }
+    .row .add-cart{
+        background: green;
+        position: absolute;
+        width: 100%;
+        background-color: darkgray;
+        transition: all .42s;
+        opacity: 0;
+        cursor: pointer;
+        text-align: center;
+    }
+    .row img:hover .add-cart .cart1{
+        opacity: 1;
+
+    }
     .product-text h5{
         position: absolute;
         top: 13px;
@@ -175,6 +189,14 @@ header{
         padding: 3px 10px;
         border-radius:2px ;
 
+    }
+    .bxs-heart{
+        color: #EE1c47;
+    }
+    .addcart{
+        top:8px;
+        right:0;
+        font-size: 35px;
     }
     .heart-icon{
         position: absolute;
@@ -375,4 +397,54 @@ header{
     #menu-icon{
         visibility: visible;
     }
+ }
+ .toastmessage .added-to-cart{
+    /* position: -webkit-sticky; */
+  position: sticky;
+  top: 50px;
+  background-color: yellow;
+  /* padding: 50px; */
+  font-size: 20px;
+
+ }
+
+
+ /* cart css\ */
+ .container{
+    position: fixed;
+    /* width: 100%; */
+    top: 30%;
+    /* right: 0; */
+    justify-content:first baseline;
+    text-align: center;
+    align-items: center;
+  
+ }
+ .container div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    /* grid-template-columns: repeat(auto-fit, minmax(160px, auto)); */
+ }
+ .container .number{
+    width: 40px;
+    height: 20px;
+    /* background-color: #27b737; */
+    /* color: red; */
+    text-align: center;
+ }
+ .container h4{
+    margin: 20%;
+    font-size: 40px;
+    width: 100%;
+    color: #EE1c47;
+ }
+.container b{
+    color: #EE1c47;
+}
+.container i{
+    color: #EE1c47;
+}
+ .container span{
+    right: 0;
  }
